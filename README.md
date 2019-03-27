@@ -2,11 +2,12 @@
 
 ## Learning Goals
 
-- Interpolate variables into strings
+- Define string interpolatation
+- Practice interpolating variables into strings
 
 ## Introduction
 
-You're a party planner for Beyonce's 35th birthday and you're using Ruby to help
+You're a party planner for Beyonce's next birthday and you're using Ruby to help
 you out with the arrangements. There is a variable called `num_of_attendees` and
 since she's very popular, this variable points to the integer 547. You try and
 print the value of `num_of_attendees` to the screen with the code below:
@@ -28,7 +29,8 @@ num_of_attendees = 547
 puts "There are " + num_of_attendees + " people coming to Beyonce's birthday party."
 ```
 
-But that produces an error! Specifically, it produces `TypeError (no implicit conversion of Integer into String)`. Remember that Ruby won't automatically
+But that produces an error! Specifically, it produces `TypeError (no implicit
+conversion of Integer into String)`. Remember that Ruby won't automatically
 convert one data type to another. We would need to convert the integer 547 into
 a string. One way to do this is to use a built in method for the Integer class,
 `to_s`, that converts an integer to a string:
@@ -58,7 +60,7 @@ We did not have to deal with adding pieces of strings or converting data. String
 interpolation allows us to format a string the way we would like, and add in
 dynamic content with variables.
 
-## Additional Practice
+## Practice Interpolating Variables into Strings
 
 Let's drop into IRB and copy and paste the code from the following example.
 
@@ -93,7 +95,7 @@ puts "2 + 2 = #{2+2}"
 
 This prints `2 + 2 = 4`.
 
-## Double Quotes Only
+### Double Quotes Only
 
 Interpolation will only work on Strings wrapped in double quotes (`""`). Single
 quotes (`''`) **do not support string interpolation**, so running:
